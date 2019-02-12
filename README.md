@@ -1,13 +1,25 @@
-# Node.js gastles #
+# Node.js gastles - start branch #
 
-## Wat is er voorzien? ##
+## Aanwezig in deze repository ##
 
-Er zijn twee branches voorzien:
-* `feature/start`
-* `feature/solution`
+* Basis Express app
+    * Main file `./app.js`.
+    * Default route `./routes/default.js`.
+    * Config met basis config (momenteel enkel de poort).
+* Linter (ESLint), voer `npm run lint` om je code te valideren.
+* `.editorconfig` om je files sneller/beter te formatteren.
 
-`start` bevat een kleine set-up die je in staat moet stellen om snel met de opdracht te kunnen starten.  
-`solution` bevat de oplossing. Deze zal pas later vandaag online verschijnen. We hebben zelf ook op school gezeten, we weten wat er gebeurt als de oplossing meteen beschikbaar is 😉.
+## Opdracht ##
+
+Vraag een `key` op bij onze [API](http://localhost:3000) door middel van postman.  
+Tip: [http://localhost:3000/docs](http://localhost:3000/docs) om de documentatie van onze API te bekijken.
+
+Maak aan de hand van middleware, services en controllers een route die via een veilige weg naar onze API (op [http://localhost:3000](http://localhost:3000)) berichten stuurt. Spreek je eigen route ook aan via Postman (of curl voor de echte hardcore developers 😉).
+
+## Extra info ##
+
+Om requests uit te voeren, kan je werken met [request](https://www.npmjs.com/package/request) (reeds in de repository) of [request-promise](https://www.npmjs.com/package/request-promise). De eerste is reeds geïnstalleerd, de tweede dien je zelf te installeren. We raden aan om met de tweede te werken omdat meer mogelijkheden biedt qua error handling en chainen van je requests.  
+**TIP**: Neem ook zeker [hier](https://github.com/request/request-promise#post-data-to-a-json-rest-api) een kijkje, je hebt het nodig voor je opdracht 😉.
 
 ## Hulp nodig? Of vragen? ##
 
