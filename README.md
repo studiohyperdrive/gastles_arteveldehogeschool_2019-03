@@ -1,13 +1,19 @@
-# Node.js gastles #
+# Node.js gastles - solution branch #
 
-## Wat is er voorzien? ##
+## Aanwezig in deze repository ##
 
-Er zijn twee branches voorzien:
-* `feature/start`
-* `feature/solution`
-
-`start` bevat een kleine set-up die je in staat moet stellen om snel met de opdracht te kunnen starten.  
-`solution` bevat de oplossing. Deze zal pas later vandaag online verschijnen. We hebben zelf ook op school gezeten, we weten wat er gebeurt als de oplossing meteen beschikbaar is 😉.
+* Basis Express app
+    * Main file `./app.js`.
+    * Default route `./routes/default.js`.
+    * Config met basis config (momenteel enkel de poort).
+    * `routes` map met:
+        * `default` route dewelke reeds aanwezig was in de `start` branch.
+        * `message` route om je bericht naartoe te sturen.
+    * `controllers` map met controller dewelke vasthangt aan de route.
+    * `services` map met message service om een bericht te versturen.
+    * `middleware` map met validatie helper.
+* Linter (ESLint), voer `npm run lint` om je code te valideren.
+* `.editorconfig` om je files sneller/beter te formatteren.
 
 ## Hulp nodig? Of vragen? ##
 

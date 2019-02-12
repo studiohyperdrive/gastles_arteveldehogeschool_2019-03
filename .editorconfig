@@ -1,0 +1,22 @@
+root = true
+
+# Defaults to tab-indented (use smart-tabs)
+[*]
+charset = utf-8
+indent_style = space
+end_of_line = LF
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# 2 space indentation for package.json
+[{package}.json]
+indent_style = space
+indent_size = 2
+
+
+# Don't trim trailing whitespace on MarkDown.
+# (Remember, trailing spaces in markdown is used to differentiate line breaks and paragraphs)
+[*.md]
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = false
